@@ -1,0 +1,211 @@
+body {
+  background-color: #2b2f3a;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* CONTAINER */
+.upload-container {
+  max-width: 900px;
+  margin: 60px auto;
+  margin-top: 10%;
+  background-color: #3a3f4b;
+  border-radius: 14px;
+  padding: 50px 60px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.35);
+}
+
+.upload-title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+}
+
+/* FORM LAYOUT */
+.upload-form {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+/* LEFT BOX */
+.upload-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 5px;
+}
+
+/* FILE UPLOAD BOX */
+.file-upload-box {
+  background-color: #464b57;
+  width: 230px;
+  height: 230px;
+  border-radius: 12px;
+  border: 2px dashed #7b7f8b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  padding: 15px;
+}
+
+.file-upload-box:hover {
+  border-color: #a3a7b3;
+  background-color: #505563;
+}
+
+.file-upload-box input {
+  display: none;
+}
+
+.file-upload-box span {
+  font-size: 1rem;
+  color: #ddd;
+  word-break: break-word;
+}
+
+/* RIGHT SIDE FORM */
+.upload-right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 25px; /* ✅ เพิ่มระยะห่างแต่ละบล็อกให้ label ไม่ชิด input */
+}
+
+/* FORM GROUP */
+.form-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex: 1;
+  min-width: 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* ✅ เพิ่มระยะห่างระหว่าง label กับ input */
+}
+
+label {
+  font-size: 0.95rem;
+  margin-bottom: 2px;
+  color: #e6e9ff; /* ✅ สีชัดขึ้น */
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+/* INPUT FIELDS */
+input,
+select,
+textarea {
+  background-color: #4a4f5c;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 12px 14px; /* ✅ ขยาย padding ให้สบายตา */
+  font-size: 0.95rem;
+  outline: none;
+  transition: all 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #aaa;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  background-color: #555a69;
+  border-color: #8a8ef5;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+/* BUTTON */
+.upload-btn {
+  background: linear-gradient(135deg, #6b6fdb, #8b8efc);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+  align-self: center;
+  width: 200px;
+  text-transform: uppercase;
+}
+
+.upload-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(140, 143, 255, 0.3);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .upload-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .upload-left {
+    order: -1;
+  }
+
+  .upload-btn {
+    width: 100%;
+  }
+
+  .upload-container {
+    padding: 40px 30px;
+  }
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag-btn {
+  padding: 6px 12px;
+  border: 1px solid #555;
+  border-radius: 6px;
+  background: transparent;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 14px;
+  color: #fff; /*  เปลี่ยนเป็นสีขาว  */
+}
+
+.tag-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.tag-btn.active {
+  background: linear-gradient(
+    90deg, 
+    #00c6ff 0%,  /* สีซ้าย (สีฟ้าสว่าง) */
+    #0072ff 100% /* สีขวา   */
+  );
+  border-color: #ffffff;
+}

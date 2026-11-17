@@ -1,0 +1,112 @@
+/* ครอบกลางแนวตั้ง-แนวนอน */
+.login-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px; 
+  background-color: #2f3645;
+}
+
+/* กล่องฟอร์ม */
+.login-container {
+  width: 340px;
+  background-color: #4D556C;
+  border-radius: 10px;
+  padding: 24px;
+  color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* หัวข้อ */
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+/* input ทั้งหมด */
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* ปุ่ม login + google เท่ากัน */
+.login-button,
+.google-btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* สีของปุ่ม login */
+.login-button {
+  background-color: #1E90FF;
+  color: white;
+}
+
+.login-button:hover {
+  background-color: #0a6fd6;
+}
+
+/* ปุ่ม Google */
+.google-btn {
+  background-color: #ffffff;
+  color: #000;
+}
+
+.google-btn img {
+  margin-right: 8px;
+}
+
+/* ช่อง password + ปุ่ม Show/Hide */
+.password-container {
+  position: relative;
+}
+
+.password-container input {
+  padding-right: 60px; /* เผื่อที่ด้านขวาสำหรับปุ่ม */
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: #ffffff;
+}
+
+.toggle-password:hover {
+  font-weight: bold;
+}
+
+/* ลิงก์ Register */
+.register-links {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.register-links a {
+  color: #86c5ff;
+  text-decoration: none;
+}
+
+.register-links a:hover {
+  text-decoration: underline;
+}

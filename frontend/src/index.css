@@ -1,0 +1,41 @@
+
+:root {
+  --ss-bg: #DDDDDD;
+  --ss-primary: #19427D;
+  --ss-navy: #041228;
+  --ss-white: #F8F9FC;
+  --ss-muted: #78869A;
+  --ss-border: rgba(4, 18, 40, 0.10);
+  --ss-shadow: 0 8px 24px rgba(4, 18, 40, 0.07);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", "Segoe UI", sans-serif;
+  background: var(--ss-bg);
+  color: var(--ss-navy);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input {
+  accent-color: var(--ss-primary);
+}
+
+.app {
+  min-height: 100vh;
+  background: var(--ss-bg);
+  color: var(--ss-navy);
+}

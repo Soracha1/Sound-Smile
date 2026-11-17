@@ -1,0 +1,430 @@
+/* =========================
+   SHARK SOUND NAVBAR
+   Color: #DDDDDD / #19427D / #041228
+========================= */
+
+body {
+  padding-top: 90px;
+}
+
+/* Navbar */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 82px;
+  padding: 10px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  box-sizing: border-box;
+  background: #041228;
+  color: #DDDDDD;
+  font-family: "Poppins", sans-serif;
+  z-index: 999;
+  border-bottom: 1px solid rgba(221, 221, 221, 0.12);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo */
+.header-left {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 58px;
+  width: auto;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+
+.logo:hover {
+  transform: scale(1.04);
+}
+
+/* Navigation */
+.header-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 24px;
+  min-width: 0;
+}
+
+/* Navigation Links */
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 0;
+  color: #DDDDDD;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  white-space: nowrap;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #8DBBFF;
+}
+
+/* Home Button */
+.home-link {
+  padding: 9px 15px;
+  border: 1px solid rgba(221, 221, 221, 0.2);
+  border-radius: 9px;
+  background: rgba(25, 66, 125, 0.28);
+  transition: all 0.2s ease;
+}
+
+.home-link svg {
+  font-size: 16px;
+}
+
+.home-link:hover {
+  color: #FFFFFF;
+  background: #19427D;
+  border-color: #19427D;
+  transform: translateY(-1px);
+}
+
+/* Usage Info */
+.usage-info {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #DDDDDD;
+  font-size: 11px;
+  opacity: 0.8;
+  white-space: nowrap;
+}
+
+.usage-divider {
+  color: #19427D;
+}
+
+/* Member Info */
+.member-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-left: 14px;
+  border-left: 1px solid rgba(221, 221, 221, 0.2);
+  white-space: nowrap;
+}
+
+.member-label {
+  color: #9BAEC8;
+  font-size: 10px;
+}
+
+.member-plan {
+  color: #DDDDDD;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.member-expire {
+  color: #9BAEC8;
+  font-size: 10px;
+}
+
+/* Login / Logout Button */
+.gradient-login-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 21px;
+  border: 1px solid #19427D;
+  border-radius: 9px;
+  background: #19427D;
+  color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.gradient-login-button:hover {
+  background: #24569B;
+  border-color: #24569B;
+  box-shadow: 0 4px 14px rgba(25, 66, 125, 0.3);
+  transform: translateY(-1px);
+}
+
+.logout-button {
+  background: transparent;
+  border-color: rgba(221, 221, 221, 0.25);
+  color: #DDDDDD;
+}
+
+.logout-button:hover {
+  background: #19427D;
+  border-color: #19427D;
+  color: #FFFFFF;
+}
+
+/* Account Actions */
+.account-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* Profile */
+.profile-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #19427D;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.avatar:hover {
+  border-color: #8DBBFF;
+  transform: scale(1.05);
+}
+
+/* Icon Buttons */
+.icon-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  border: none;
+  border-radius: 9px;
+  background: transparent;
+  color: #DDDDDD;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.icon-button:hover {
+  background: rgba(25, 66, 125, 0.4);
+  color: #8DBBFF;
+}
+
+/* Notifications */
+.notification-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.notification-dot {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 8px;
+  height: 8px;
+  background: #E05252;
+  border: 2px solid #041228;
+  border-radius: 50%;
+}
+
+.notification-dropdown {
+  position: absolute;
+  top: calc(100% + 14px);
+  right: 0;
+  width: 270px;
+  max-height: 350px;
+  overflow-y: auto;
+  background: #0B1D37;
+  border: 1px solid rgba(221, 221, 221, 0.12);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  z-index: 1000;
+  animation: fadeIn 0.2s ease;
+}
+
+.notification-item {
+  padding: 13px 15px;
+  border-bottom: 1px solid rgba(221, 221, 221, 0.08);
+  color: #DDDDDD;
+  font-size: 13px;
+  transition: background 0.2s ease;
+}
+
+.notification-item:last-child {
+  border-bottom: none;
+}
+
+.notification-item:hover {
+  background: rgba(25, 66, 125, 0.35);
+}
+
+.notification-item.unread {
+  font-weight: 600;
+}
+
+.notification-empty {
+  padding: 16px;
+  margin: 0;
+  color: #9BAEC8;
+  text-align: center;
+  font-size: 13px;
+}
+
+/* Admin Dropdown */
+.admin-dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.admin-link {
+  font-family: inherit;
+}
+
+.dropdown-arrow {
+  margin-left: 2px;
+  font-size: 12px;
+  transition: transform 0.2s ease;
+}
+
+.admin-dropdown:hover .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 12px);
+  right: 0;
+  width: 205px;
+  padding: 7px;
+  background: #0B1D37;
+  border: 1px solid rgba(221, 221, 221, 0.12);
+  border-radius: 11px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  z-index: 1000;
+  animation: fadeIn 0.2s ease;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 11px 13px;
+  border-radius: 7px;
+  color: #DDDDDD;
+  text-decoration: none;
+  font-size: 13px;
+  transition: all 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background: #19427D;
+  color: #FFFFFF;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Tablet */
+@media (max-width: 1100px) {
+  .header {
+    padding: 10px 3%;
+  }
+
+  .header-right {
+    gap: 15px;
+  }
+
+  .usage-info {
+    display: none;
+  }
+
+  .nav-link {
+    font-size: 13px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 760px) {
+  body {
+    padding-top: 130px;
+  }
+
+  .header {
+    min-height: auto;
+    padding: 10px 4%;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logo {
+    height: 43px;
+  }
+
+  .header-right {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px 17px;
+  }
+
+  .nav-link {
+    font-size: 12px;
+  }
+
+  .home-link {
+    padding: 7px 11px;
+  }
+
+  .member-info {
+    display: none;
+  }
+
+  .gradient-login-button {
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+
+  .avatar {
+    width: 32px;
+    height: 32px;
+  }
+
+  .notification-dropdown {
+    right: -45px;
+    width: 250px;
+  }
+}
